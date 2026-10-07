@@ -1,0 +1,92 @@
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #2d3436;
+}
+
+nav {
+    background: #1e272e;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    color: #f1f2f6;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: 600;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd32a;
+    border-bottom-color: #ffd32a;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #5f27cd;
+    margin-top: 0;
+}
+
+/* Formulaire (pour la page /calcul) */
+form input, form select {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+form input:focus, form select:focus {
+    outline: none;
+    border-color: #5f27cd;
+}
+
+button {
+    background: #5f27cd;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover { background: #341f97; }
+
+/* Tableau d'historique */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: #5f27cd;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #dfe6e9;
+}
+
+tr:hover { background: #f5f3ff; }
