@@ -90,3 +90,50 @@ td {
 }
 
 tr:hover { background: #f5f3ff; }
+
+
+/* Page d'accueil */
+.hero {
+    text-align: center;
+    padding: 20px 0 30px;
+}
+
+.sous-titre {
+    font-size: 18px;
+    color: #636e72;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.cartes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.carte {
+    background: #f5f3ff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #5f27cd;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carte:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(95, 39, 205, 0.25);
+}
+
+.carte .icone { font-size: 36px; }
+
+.carte h3 {
+    color: #5f27cd;
+    margin: 10px 0 5px;
+}
+
+.carte p {
+    margin: 0;
+    color: #636e72;
+    font-size: 15px;
+}
